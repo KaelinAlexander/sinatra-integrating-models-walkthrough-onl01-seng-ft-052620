@@ -1,5 +1,3 @@
-require 'pry'
-
 class TextAnalyzer
   attr_reader :text
 
@@ -36,7 +34,6 @@ class TextAnalyzer
       if value > biggest.values.first
         biggest = {}
         biggest[key] = value
-        binding.pry
       end
     end
 

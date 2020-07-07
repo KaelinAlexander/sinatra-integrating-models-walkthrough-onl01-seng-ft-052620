@@ -5,5 +5,5 @@
 <h2>Vowels: <% @vowels = @analyzed_text.count_of_vowels %><%= @vowels %></h2>
 
 <h2>Consonants: <% @consonants = @analyzed_text.count_of_consonants %><%= @consonants %></h2>
-<% @most = @analyzed_text.most_used_letter %><% @letter = @most[:key1] %><% @times = @most[:value1] %>
+<% @most = @analyzed_text.most_used_letter %><% @letter = @most[:key1].to_s %><% @times = @most[:value1] %>
 <h2>Most Common Letter: <%= @letter> used <%= @times %> times</h2>

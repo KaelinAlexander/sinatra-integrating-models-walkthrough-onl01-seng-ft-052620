@@ -8,5 +8,6 @@
 <% @analyzed_text.each do |k,v| %>
 <% @letter = k.to_s %>
 <% @times = v.to_s %>
+<% end %>
 <% @most = @analyzed_text.most_used_letter %><% @letter = @most[:key1].to_s %><% @times = @most[:value1].to_s %>
 <h2>Most Common Letter: <%= @letter %>, used <%= @times %> times</h2>
